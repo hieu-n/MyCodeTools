@@ -1,0 +1,56 @@
+module.exports = {
+  env: {
+    browser: true,
+    es6: true,
+    node: true,
+  },
+  extends: [
+    'airbnb-base',
+    'plugin:import/typescript',
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    // "plugin:@typescript-eslint/recommended-requiring-type-checking",
+  ],
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+  },
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: 'module',
+  },
+  plugins: [
+    '@typescript-eslint',
+  ],
+  rules: {
+    'no-console': 'off',
+    'no-underscore-dangle': 'off',
+    'no-empty-function': 'off',
+    'no-await-in-loop': 'off',
+    'no-constant-condition': ['error', {'checkLoops': false}],
+    'no-param-reassign': 'off',
+    'no-continue': 'off',
+    'no-prototype-builtins': 'off',
+    'no-restricted-syntax': 'off',
+    'no-debugger': 'off',
+    'camelcase': 'off',
+    'max-len': 'off',
+    'require-atomic-updates': 'off',
+    'prefer-destructuring': 'off',
+
+    '@typescript-eslint/camelcase': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    // '@typescript-eslint/interface-name-prefix': ['error', {'prefixWithI': 'always'}],
+    '@typescript-eslint/interface-name-prefix': 'off',
+    '@typescript-eslint/ban-ts-ignore': 'off',
+    '@typescript-eslint/no-empty-function': 'off',
+    '@typescript-eslint/no-inferrable-types': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',
+    'import/no-mutable-exports': 'off',
+    'import/no-extraneous-dependencies': 'off',
+    'import/prefer-default-export': 'off',
+    'import/extensions': 'off'
+  },
+};

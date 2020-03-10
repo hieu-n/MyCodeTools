@@ -1,0 +1,35 @@
+{
+  "name": "MyCodeTools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export -o docs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^13.9.0",
+    "@types/react": "^16.9.23",
+    "next": "^9.3.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "typescript": "^3.8.3",
+    "@types/bootstrap": "^4.3.1",
+    "@types/lodash": "^4.14.149",
+    "@types/react-dom": "^16.9.5",
+    "@typescript-eslint/eslint-plugin": "^2.21.0",
+    "@typescript-eslint/parser": "^2.21.0",
+    "lodash": "^4.17.15",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "quicktype-core": "^6.0.52",
+    "bootstrap": "^4.4.1"
+  }
+}
